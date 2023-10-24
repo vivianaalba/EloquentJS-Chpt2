@@ -29,13 +29,14 @@ let chess = "";
 // Loop - make chessboard with i is rows and j is columns
 for (let i = 0; i < 8; i++) {
     for (let j = 0; j < 4; j++) {
-      // if i plus j modulo 2 equals 0
+      // if i plus j modulo 2 equals 0 - ensures that it does not add hashtag back to back
         if ((i + j) % 2 === 0) {
             chess += " ";
-        // if i plus j divided by 2 does NOT have a         remainder of 0
+        // adds the hashtag on the board
           } else {
             chess += "#";
           }
+        // adds the space on the board
       chess += " ";
       }
     chess += "\n";
